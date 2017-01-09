@@ -14,6 +14,8 @@ build:
 	rm docker/config.cfg
 
 publish:
-	docker tag -f $(NAME):$(VERSION) $(NAME):$(VERSION)
-	docker tag -f $(NAME):$(VERSION) $(NAME):latest
-	docker push $(NAME)
+#	docker tag -f $(NAME):$(VERSION) $(NAME):$(VERSION)
+#	docker tag -f $(NAME):$(VERSION) $(NAME):latest
+#	docker push $(NAME)
+	docker tag $(NAME):$(VERSION) $(NAME):$(VERSION)
+	docker tag $(NAME):$(VERSION) $(NAME):latest
